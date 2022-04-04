@@ -1,0 +1,55 @@
+{
+  "name": "express_template",
+  "version": "1.0.0",
+  "description": "an express template",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn dev",
+    "dev": "nodemon --exec babel-node --config-file ./babel.config.json src/index.js",
+    "lint": "eslint . --fix"
+  },
+  "author": "ahnaf swapnil",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-transform-commonjs-es2015-modules": "^4.0.1",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.14.9",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "eqeqeq": "warn",
+      "prettier/prettier": "warn"
+    }
+  }
+}
