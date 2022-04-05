@@ -16,3 +16,4 @@ References
 - https://github.com/webmakaka/Test-Driven-Development-with-Nodejs
 - https://www.npmjs.com/package/module-alias
 - https://nodejs.org/api/packages.html#packages_imports
+- https://github.com/awakelife93/node-api-template [Refer to this for typescript implementation]
