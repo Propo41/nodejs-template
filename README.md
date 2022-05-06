@@ -17,3 +17,4 @@ References
 - https://www.npmjs.com/package/module-alias
 - https://nodejs.org/api/packages.html#packages_imports
 - https://github.com/awakelife93/node-api-template [Refer to this for typescript implementation]
+- https://blog.bitsrc.io/how-to-set-up-node-js-application-with-eslint-and-prettier-b1b7994db69f [Prettier and eslint]
