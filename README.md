@@ -9,6 +9,8 @@ only support the commonJS syntax for importing. So, when I used the es module im
 I also tried out the directory [mapping](https://nodejs.org/api/packages.html#packages_imports) thingy by nodejs. It worked upto a point but I couldnt import from nested folders. Probably it can be done in some way but didn't have the time to figure it out.
 Anyways, after hours of searching, I found a solution that uses babel and webpack to do that.
 
+Check out this: https://mtsknn.fi/blog/how-to-use-absolute-import-paths-in-nodejs/
+
 
 References
 ---
