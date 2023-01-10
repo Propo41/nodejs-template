@@ -1,12 +1,11 @@
 // const express = require("express");
 // const pop = require("@utils");
-import { app } from "@/app";
-import { pop } from "@/utils/index";
+import { app, testFunction } from "./app.js";
 
-pop();
+testFunction();
 
 // Port
-const port = process.env.PORT || 4000;
+let port = process.env.PORT || 4000;
 
 // Listen
 app.listen(port, () => {

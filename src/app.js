@@ -2,4 +2,8 @@ import express from "express";
 
 const app = express();
 
-export { app };
+const testFunction = () => {
+  return "success";
+};
+
+export { app, testFunction };
