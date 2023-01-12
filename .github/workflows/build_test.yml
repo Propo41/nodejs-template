@@ -1,0 +1,84 @@
+# [INCOMPLETE] This workflow will do a clean installation of node dependencies, cache/restore them,
+# build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [main, develop]
+    paths-ignore:
+      - "**.md"
+  pull_request:
+    branches:
+      [main, develop]
+      # Ignore updates on Readme file
+    paths-ignore:
+      - "**.md"
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # job 1: greet the user
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send greeting
+        run: echo "Hello ${{ github.event.inputs.name }} 🐴!! Starting the build..."
+
+  # job 2: checking eslinting issues
+#  checking_styling_issues:
+#    runs-on: ubuntu-latest
+#    needs: [greet] # the following jobs must be fulfilled to run this job
+#
+#    strategy:
+#      matrix:
+#        node-version: [17.x]
+#        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+#
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v3
+#        with:
+#          token: ${{ secrets.CEFALO_PROJECTS_ACCESS_TOKEN }}
+#
+#      - name: Use Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#          cache: "npm"
+#
+#      - name: Install yarn
+#        run: npm install -g yarn
+#
+#      - name: Install project packages
+#        run: yarn install --frozen-lockfile #ensures that the yarn.lock is not updated during the installation
+#
+#      - name: Running linter
+#        run: npm run lint
+#
+#      - name: Running style check
+#        run: npm run prettier
+#
+#      - name: Success
+#        run: |
+#          echo "Code style and syntax checking was successful 🎉"
+#  # job 3: checking installation
+#  installation:
+#    runs-on: ubuntu-latest
+#    needs: [greet, checking_styling_issues]
+#
+#    strategy:
+#      matrix:
+#        node-version: [17.x]
+#
+#    steps:
+#      - name: Install yarn
+#        run: npm install -g yarn
+#
+#      - name: Install project packages
+#        run: yarn install --frozen-lockfile #ensures that the yarn.lock is not updated during the installation
+#
+#      - name: Success
+#        run: |
+#          echo "package installation successful 🎉"
+#

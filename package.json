@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "lint": "eslint src/index.js",
-    "lint-fix": "eslint src/index.js --fix"
+    "lint": "eslint src/",
+    "lint-fix": "eslint src/ --fix",
+    "prettier": "prettier --check src/",
+    "prettier-fix": "prettier --write src/"
   },
   "author": "ahnaf swapnil",
   "license": "ISC",
@@ -17,10 +19,7 @@
   },
   "devDependencies": {
     "eslint": "8.2.0",
-    "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "2.25.3",
-    "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-unused-imports": "^2.0.0",
