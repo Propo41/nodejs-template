@@ -1,10 +1,18 @@
+### Get started
+```
+bash
+npm install
+npm run start:dev
+```
+
 ### Introduction
 
-Project is a faster way to building a Node.js RESTful API in TypeScript.
+An express template with typescript inspired from this [repository](https://github.com/kutia-software-company/express-typescript-starter)
 
-Start use now and just focus on your business and not spending hours in project configuration.
+- `module-alias` is used for absolute imports
+- `helmet` is used for security features.
 
-### Features
+### Notable tools 
 
 - **Beautiful Code** thanks to the awesome annotations of the libraries from [pleerock](https://github.com/pleerock).
 - **Dependency Injection** done with the nice framework from [TypeDI](https://github.com/pleerock/typedi).
@@ -27,10 +35,6 @@ Start use now and just focus on your business and not spending hours in project 
 - **GraphQL** thanks to [TypeGraphQL](https://19majkel94.github.io/type-graphql/) we have a some cool decorators to simplify the usage of GraphQL.
 - **Queue Jobs** thanks to [BullMQ](https://github.com/taskforcesh/bullmq).
 - **Query Parser** thanks to [Typeorm Query Parser](https://github.com/gentritabazi01/typeorm-simple-query-parser).
-
-### Documentation
-
-https://kutia-software-company.github.io/express-typescript-starter
 
 ### License
 
